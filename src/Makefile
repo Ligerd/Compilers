@@ -3,7 +3,7 @@ ANTLR=/usr/local/lib/antlr-4.9.2-complete.jar
 all: generate compile test
 
 generate:
-	java -jar $(ANTLR) -o output Demo.g4
+	java -jar $(ANTLR) -o output MyGrammar.g4
 
 compile:
 	javac -cp $(ANTLR):output:. Main.java

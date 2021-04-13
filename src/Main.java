@@ -10,9 +10,9 @@ public class Main {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         MyGrammarParser parser = new MyGrammarParser(tokens);
 
-        ParseTree tree = parser.program();
+        ParseTree tree = parser.prog();
 
-        System.out.println(tree.toStringTree(parser));
+//        System.out.println(tree.toStringTree(parser));
 
         ParseTreeWalker walker = new ParseTreeWalker();
         walker.walk(new LLVMActions(), tree);

@@ -1,4 +1,4 @@
-// Generated from /home/ligerd/Compilers/Project 2/myProjectJava/src/MyGrammar.g4 by ANTLR 4.9.1
+// Generated from /home/ligerd/Compilers/src/MyGrammar.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -696,8 +696,8 @@ public class MyGrammarParser extends Parser {
 	}
 	public static class TointContext extends Expr4Context {
 		public TerminalNode TOINT() { return getToken(MyGrammarParser.TOINT, 0); }
-		public Expr2Context expr2() {
-			return getRuleContext(Expr2Context.class,0);
+		public Expr4Context expr4() {
+			return getRuleContext(Expr4Context.class,0);
 		}
 		public TointContext(Expr4Context ctx) { copyFrom(ctx); }
 		@Override
@@ -716,8 +716,8 @@ public class MyGrammarParser extends Parser {
 	}
 	public static class TorealContext extends Expr4Context {
 		public TerminalNode TOREAL() { return getToken(MyGrammarParser.TOREAL, 0); }
-		public Expr2Context expr2() {
-			return getRuleContext(Expr2Context.class,0);
+		public Expr4Context expr4() {
+			return getRuleContext(Expr4Context.class,0);
 		}
 		public TorealContext(Expr4Context ctx) { copyFrom(ctx); }
 		@Override
@@ -799,7 +799,7 @@ public class MyGrammarParser extends Parser {
 				setState(62);
 				match(TOINT);
 				setState(63);
-				expr2();
+				expr4();
 				}
 				break;
 			case TOREAL:
@@ -809,7 +809,7 @@ public class MyGrammarParser extends Parser {
 				setState(64);
 				match(TOREAL);
 				setState(65);
-				expr2();
+				expr4();
 				}
 				break;
 			case T__1:
@@ -856,9 +856,10 @@ public class MyGrammarParser extends Parser {
 		"\2\2.)\3\2\2\2.*\3\2\2\2/\t\3\2\2\2\60\66\5\f\7\2\61\62\5\f\7\2\62\63"+
 		"\7\16\2\2\63\64\5\f\7\2\64\66\3\2\2\2\65\60\3\2\2\2\65\61\3\2\2\2\66\13"+
 		"\3\2\2\2\67=\5\16\b\289\5\16\b\29:\7\20\2\2:;\5\16\b\2;=\3\2\2\2<\67\3"+
-		"\2\2\2<8\3\2\2\2=\r\3\2\2\2>I\7\f\2\2?I\7\13\2\2@A\7\b\2\2AI\5\n\6\2B"+
-		"C\7\t\2\2CI\5\n\6\2DE\7\4\2\2EF\5\6\4\2FG\7\5\2\2GI\3\2\2\2H>\3\2\2\2"+
-		"H?\3\2\2\2H@\3\2\2\2HB\3\2\2\2HD\3\2\2\2I\17\3\2\2\2\n\21\26 \'.\65<H";
+		"\2\2\2<8\3\2\2\2=\r\3\2\2\2>I\7\f\2\2?I\7\13\2\2@A\7\b\2\2AI\5\16\b\2"+
+		"BC\7\t\2\2CI\5\16\b\2DE\7\4\2\2EF\5\6\4\2FG\7\5\2\2GI\3\2\2\2H>\3\2\2"+
+		"\2H?\3\2\2\2H@\3\2\2\2HB\3\2\2\2HD\3\2\2\2I\17\3\2\2\2\n\21\26 \'.\65"+
+		"<H";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
