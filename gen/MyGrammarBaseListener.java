@@ -159,25 +159,37 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInt(MyGrammarParser.IntContext ctx) { }
+	@Override public void enterValuForVariable(MyGrammarParser.ValuForVariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInt(MyGrammarParser.IntContext ctx) { }
+	@Override public void exitValuForVariable(MyGrammarParser.ValuForVariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReal(MyGrammarParser.RealContext ctx) { }
+	@Override public void enterPar(MyGrammarParser.ParContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReal(MyGrammarParser.RealContext ctx) { }
+	@Override public void exitPar(MyGrammarParser.ParContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumbeR(MyGrammarParser.NumbeRContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumbeR(MyGrammarParser.NumbeRContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -207,13 +219,37 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPar(MyGrammarParser.ParContext ctx) { }
+	@Override public void enterIdentifiers(MyGrammarParser.IdentifiersContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPar(MyGrammarParser.ParContext ctx) { }
+	@Override public void exitIdentifiers(MyGrammarParser.IdentifiersContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInt(MyGrammarParser.IntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInt(MyGrammarParser.IntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterReal(MyGrammarParser.RealContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReal(MyGrammarParser.RealContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

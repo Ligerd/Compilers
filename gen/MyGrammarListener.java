@@ -149,53 +149,17 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitDiv(MyGrammarParser.DivContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code int}
+	 * Enter a parse tree produced by the {@code valuForVariable}
 	 * labeled alternative in {@link MyGrammarParser#expr4}.
 	 * @param ctx the parse tree
 	 */
-	void enterInt(MyGrammarParser.IntContext ctx);
+	void enterValuForVariable(MyGrammarParser.ValuForVariableContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code int}
+	 * Exit a parse tree produced by the {@code valuForVariable}
 	 * labeled alternative in {@link MyGrammarParser#expr4}.
 	 * @param ctx the parse tree
 	 */
-	void exitInt(MyGrammarParser.IntContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code real}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void enterReal(MyGrammarParser.RealContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code real}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void exitReal(MyGrammarParser.RealContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code toint}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void enterToint(MyGrammarParser.TointContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code toint}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void exitToint(MyGrammarParser.TointContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code toreal}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void enterToreal(MyGrammarParser.TorealContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code toreal}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 */
-	void exitToreal(MyGrammarParser.TorealContext ctx);
+	void exitValuForVariable(MyGrammarParser.ValuForVariableContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code par}
 	 * labeled alternative in {@link MyGrammarParser#expr4}.
@@ -208,4 +172,76 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPar(MyGrammarParser.ParContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code numbeR}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterNumbeR(MyGrammarParser.NumbeRContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code numbeR}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitNumbeR(MyGrammarParser.NumbeRContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code toint}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterToint(MyGrammarParser.TointContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code toint}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitToint(MyGrammarParser.TointContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code toreal}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterToreal(MyGrammarParser.TorealContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code toreal}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitToreal(MyGrammarParser.TorealContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code identifiers}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterIdentifiers(MyGrammarParser.IdentifiersContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code identifiers}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitIdentifiers(MyGrammarParser.IdentifiersContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code int}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 */
+	void enterInt(MyGrammarParser.IntContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code int}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 */
+	void exitInt(MyGrammarParser.IntContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code real}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 */
+	void enterReal(MyGrammarParser.RealContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code real}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 */
+	void exitReal(MyGrammarParser.RealContext ctx);
 }

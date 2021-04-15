@@ -93,33 +93,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDiv(MyGrammarParser.DivContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code int}
+	 * Visit a parse tree produced by the {@code valuForVariable}
 	 * labeled alternative in {@link MyGrammarParser#expr4}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInt(MyGrammarParser.IntContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code real}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitReal(MyGrammarParser.RealContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code toint}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitToint(MyGrammarParser.TointContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code toreal}
-	 * labeled alternative in {@link MyGrammarParser#expr4}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitToreal(MyGrammarParser.TorealContext ctx);
+	T visitValuForVariable(MyGrammarParser.ValuForVariableContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code par}
 	 * labeled alternative in {@link MyGrammarParser#expr4}.
@@ -127,4 +106,46 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPar(MyGrammarParser.ParContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code numbeR}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNumbeR(MyGrammarParser.NumbeRContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code toint}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitToint(MyGrammarParser.TointContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code toreal}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitToreal(MyGrammarParser.TorealContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code identifiers}
+	 * labeled alternative in {@link MyGrammarParser#value}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdentifiers(MyGrammarParser.IdentifiersContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code int}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInt(MyGrammarParser.IntContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code real}
+	 * labeled alternative in {@link MyGrammarParser#number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReal(MyGrammarParser.RealContext ctx);
 }

@@ -27,12 +27,18 @@ expr3: expr4                #single3
        ;
 
 
-expr4:   INT			#int
-       | REAL			#real
-       | TOINT expr4		#toint
-       | TOREAL expr4		#toreal
-       | '(' expr0 ')'		#par
+expr4:  value   #valuForVariable
+        | '(' expr0 ')'		#par
 ;
+
+value:          INT			#int
+              | REAL			#real
+              | TOINT expr4		#toint
+              | TOREAL expr4		#toreal
+              | ID    #identifiers
+;
+
+
 
 PRINT:	'print'
     ;
